@@ -15,7 +15,7 @@ public class AddUserServlet extends HttpServlet{
 		
 		res.setContentType("text/html");
 		try {
-			String name = (String)req.getParameter("name");
+			String name = req.getParameter("name");
 			String email = (String)req.getParameter("email");
 			String country = (String)req.getParameter("country");
 			
