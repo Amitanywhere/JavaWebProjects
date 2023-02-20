@@ -45,7 +45,9 @@ public class UserListServlet extends HttpServlet{
 					pw.println("</td>");
 					pw.println("</tr>");
 				}
-				pw.println("</table></body></html>");
+				pw.println("</table></body>");
+				pw.println("<div><a href='registeruser.html'>Add User</a></div>");
+				pw.println("</html>");
 			}
 		}
 		catch(Exception e) {
@@ -54,3 +56,4 @@ public class UserListServlet extends HttpServlet{
 	}
 
 }
+

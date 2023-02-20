@@ -24,9 +24,7 @@ public class AddUserServlet extends HttpServlet{
 			
 			PrintWriter output = res.getWriter();
 			if(isAdded) {
-				output.println("User added successfully");
-				RequestDispatcher rd = req.getRequestDispatcher("registeruser.html");
-				rd.include(req, res);
+				res.sendRedirect("userList");
 			}
 			else {
 				output.println("user registration failed");
